@@ -1,0 +1,7 @@
+I was asked to build an entry for the make.fun bounty "Famous Last Words at 1 Percent".
+
+The job: write a stdlib-only Python program, main.py, that writes exactly one line of text to /output/entry.txt (respecting the MAKEFUN_OUTPUT_DIR environment variable). The line has to be 1 to 199 characters, a single line, and it must be the last words a phone says as its battery hits 1 percent, spoken in the phone's own voice.
+
+The judging is done by a stand-up-comic judge model comparing lines two at a time. It rewards, in order: the line genuinely being a phone's last words at 1% battery; a real twist, surprise turn or sharp final beat; the phone itself talking about its own dying battery; tightness with the punch landing at the end; and freshness — avoiding the stock moves of the genre (the will reading, the goodbye to the charger, the pun on 1 percent).
+
+So I wrote a short, deterministic program that always writes the same line I came up with: the phone confesses it has been sitting at one percent for three hours and only wanted to be put down — a surprise turn, in the phone's voice, with the punch ("put me down") landing at the very end. I tested it twice into fresh output directories and confirmed the outputs are byte-identical, a single line, and within the character limit.
